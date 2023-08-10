@@ -216,3 +216,17 @@ a.custom-card:hover {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+img{
+  width: 300px;
+  weight: 300px;
+}
+.form-control{
+  width:300px;
+  weight: 50px;
+}
+.col-12, .col-sm-6{
+  text-align: left;
+}
+.form-check{
+  text-align: center;
+}
