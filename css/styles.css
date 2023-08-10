@@ -206,3 +206,13 @@ a.custom-card:hover {
 .card img {
   max-width: 100%;
 }
+#email{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#password1{
+  margin-bottom: 30px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
