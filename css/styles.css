@@ -182,13 +182,18 @@ a.custom-card:hover {
   color: orange;
 }
 
+.divmayor{
+
+  display: flex;
+}
+
 
 
 .card-container {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  text-align:center;
+ 
 }
 
 
