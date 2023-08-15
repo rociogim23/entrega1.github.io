@@ -39,8 +39,6 @@ boton.addEventListener("click", function () {
 
     let email = document.getElementById("email").value;
     let passw = document.getElementById("password1").value;
-    console.log(email);
-    console.log(passw);
     localStorage.setItem("email", email);
     localStorage.setItem("password", passw);
 
