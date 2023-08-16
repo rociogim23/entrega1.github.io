@@ -23,7 +23,6 @@ async function displayProducts() {
              <p>${product.description}</p> </div> 
              <div> <span>${product.soldCount} vendidos</span> </div>
         `;
-
         cardsContainer.appendChild(card);
     });
 }
