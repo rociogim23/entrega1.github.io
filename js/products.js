@@ -18,10 +18,10 @@ async function displayProducts() {
         let card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-            <div> <img src="${product.image}" alt="${product.name}"> </div>    
+            <div> <img src="${product.image}" alt="${product.name}"></div>    
             <div> <h2>${product.name} - ${product.currency} ${product.cost}</h2>
-             <p>${product.description}</p> </div> 
-             <div> <span>${product.soldCount} vendidos</span> </div>
+            <p>${product.description}</p> </div> 
+            <span>${product.soldCount} vendidos</span>
         `;
         cardsContainer.appendChild(card);
     });
