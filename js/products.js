@@ -13,18 +13,17 @@ async function fetchProducts() {
 
 async function displayProducts() {
     const products = await fetchProducts();
-    
+
     products.forEach(product => {
-        const card = document.createElement("div");
-        card.classList.add("card"); 
+        let card = document.createElement("div");
+        card.classList.add("card");
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <h2>${product.name}</h2>
-            <p>${product.description}</p>
-            <span>Precio: ${product.cost} ${product.currency}</span>
-            <span>Vendidos: ${product.soldCount}</span>
+            <div> <img src="${product.image}" alt="${product.name}"> </div>    
+            <div> <h2>${product.name} - ${product.currency} ${product.cost}</h2>
+             <p>${product.description}</p> </div> 
+             <div> <span>${product.soldCount} vendidos</span> </div>
         `;
-        
+
         cardsContainer.appendChild(card);
     });
 }

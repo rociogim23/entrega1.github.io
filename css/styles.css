@@ -188,18 +188,35 @@ a.custom-card:hover {
   display: flex;
   gap: 10px;
   flex-direction: column;
-  text-align:center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 
 .card {
+  display: flex;
+  flex-direction: row;
   border: 1px solid #ccc;
   padding: 10px;
+  position: relative;
+  text-align: left;
+  font-size: 13px;
+  color: #6a6969;
 }
 
 .card img {
   max-width: 250px;
- 
+}
+
+.soldcount{
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-products{
+text-align: center;
+margin: 20px 0 20px 0;
 }
 
 
