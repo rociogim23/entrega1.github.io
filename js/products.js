@@ -16,7 +16,7 @@ async function displayProducts() {
 
     products.forEach(product => {
         let card = document.createElement("div");
-        card.classList.add("card");
+        card.classList.add("div-cards");
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <div>
