@@ -1,10 +1,10 @@
-const API_URL = "https://japceibal.github.io/emercado-api/cats_products/101.json";
-const cardsContainer = document.getElementById("container-cards");
+let API_URL = "https://japceibal.github.io/emercado-api/cats_products/101.json";
+let cardsContainer = document.getElementById("container-cards");
 
 async function fetchProducts() {
     try {
-        const response = await fetch(API_URL);
-        const data = await response.json();
+        let response = await fetch(API_URL);
+        let data = await response.json();
         return data.products;
     } catch (error) {
         console.error("Error trayendo la data:", error);
@@ -12,7 +12,7 @@ async function fetchProducts() {
 }
 
 async function displayProducts() {
-    const products = await fetchProducts();
+    let products = await fetchProducts();
 
     products.forEach(product => {
         let card = document.createElement("div");

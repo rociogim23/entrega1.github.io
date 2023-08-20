@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function(){
     
 });
 
-// Verificamos si el usuario está autenticado
 function isLoggedIn() {
     let dato = localStorage.getItem("email");
     if (dato){
@@ -26,7 +25,6 @@ function isLoggedIn() {
     }
 }
 
-// Cuando la página se cargue llamamos a la función 'isLoggedIn' y en caso de que no esté el email almacenado lo mandamos al login nuevamente.
 window.addEventListener('load', function() {
     if (!isLoggedIn()) {
         window.location.href = 'login.html';
